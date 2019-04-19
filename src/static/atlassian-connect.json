@@ -1,0 +1,37 @@
+{
+  "name": "Hello World",
+  "description": "Atlassian Connect app",
+  "key": "com.example.myapp",
+  "baseUrl": "https://4a3f30b7.ngrok.io/",
+  "lifecycle": {
+    "installed": "/installed",
+    "uninstalled": "/uninstalled",
+    "enabled": "/enabled",
+    "disabled": "/disabled"
+  },
+  "vendor": {
+    "name": "Example, Inc.",
+    "url": "http://example.com"
+  },
+  "authentication": {
+    "type": "jwt"
+  },
+  "apiVersion": 2,
+  "modules": {
+    "generalPages": [
+      {
+        "url": "/helloworld.html",
+        "key": "hello-world",
+        "location": "system.top.navigation.bar",
+        "name": {
+          "value": "Greeting"
+        }
+      }
+    ]
+  },
+  "scopes": [
+    "admin",
+    "read",
+    "write"
+  ]
+}
