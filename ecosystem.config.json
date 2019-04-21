@@ -1,0 +1,15 @@
+{
+    "apps": [
+        {
+            "name": "back",
+            "script": "node_modules/babel-cli/bin/babel-node.js",
+            "args": "src"
+        },
+        {
+            "name": "front",
+            "script": "node_modules/react-scripts/bin/react-scripts.js",
+            "args": "start",
+            "cwd": "./public"
+        }
+    ]
+}
