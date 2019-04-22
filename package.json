@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "public_html": "npm start --prefix ./public_html",
+    "public_html": "npm start --prefix ./public",
     "start": "babel-node src",
     "ngrok": "ngrok http 8000"
   },
