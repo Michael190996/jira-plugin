@@ -1,0 +1,11 @@
+FROM node:9
+
+ADD . /workspace
+WORKDIR /workspace
+
+RUN npm i
+RUN npm i serve -g
+RUN npm run build
+RUN rm -r src
+
+CMD serve -s build -l ${FRONT_PORT}

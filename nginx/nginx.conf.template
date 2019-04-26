@@ -1,0 +1,20 @@
+events {
+  worker_connections   2000;
+}
+
+http {
+	default_type  application/octet-stream;
+    include       /etc/nginx/mime.types;
+
+    server {
+	  listen        80;
+
+	  location / {
+	    proxy_pass "${FRONT_HOST}:${FRONT_PORT}";
+	  }
+
+	  location /api/ {
+         proxy_pass "${BACK_HOST}:${BACK_PORT}/";
+      }
+  }
+}

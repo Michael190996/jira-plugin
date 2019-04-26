@@ -11,7 +11,7 @@ class App extends Component {
     };
 
     setIssues(value) {
-        nodeFetch(config.API + '/api/project/issues?url=' + value)
+        nodeFetch(config.API + '/project/issues?url=' + value)
             .then(async (res) => {
                 const BODY = await res.json();
 
@@ -33,7 +33,7 @@ class App extends Component {
 
     async componentDidMount() {
         try {
-            const BODY = await nodeFetch(config.API + '/api/urls')
+            const BODY = await nodeFetch(config.API + '/urls')
                 .then(res => res.json());
 
             this.setState({

@@ -4,3 +4,16 @@
 [2019-04-19T15:08:18.550] [INFO] default - install https://michael19.atlassian.net
 [2019-04-19T15:28:37.087] [INFO] default - App server start at localhost:8000
 [2019-04-19T15:41:56.012] [INFO] default - App server start at localhost:8000
+[2019-04-19T16:34:04.822] [INFO] default - App server start at localhost:8000
+[2019-04-25T10:39:51.197] [INFO] default - App server start at localhost:http://localhost:8000
+[2019-04-25T10:41:15.843] [INFO] default - App server start at undefined
+[2019-04-25T10:41:49.837] [INFO] default - App server start at http://localhost:8000/
+[2019-04-25T10:52:37.689] [INFO] default - App server start at http://localhost:8000/
+[2019-04-26T09:40:10.877] [INFO] default - App server start at http://localhost:8000/
+[2019-04-26T10:05:11.716] [INFO] default - App server start at http://localhost:8000/
+[2019-04-26T10:05:44.416] [INFO] default - App server start at http://localhost:8000/
+[2019-04-26T10:10:27.065] [INFO] default - App server start at http://back:8000/
+[2019-04-26T10:12:43.642] [INFO] default - App server start at http://back:8000/
+[2019-04-26T10:15:05.681] [INFO] default - App server start at http://back:8000/
+[2019-04-26T10:18:47.346] [INFO] default - App server start at http://back:8000/
+[2019-04-26T11:14:16.592] [INFO] default - App server start at http://back:8000/

@@ -29,13 +29,13 @@ router.post('/disabled', (ctx, next) => {
     ctx.body = {};
 });
 
-router.get('/api/project/issues', async (ctx, next) => {
+router.get('/project/issues', async (ctx, next) => {
     const {url: BASEURL} = ctx.query;
     ctx.body = await JiraApi.issues(BASEURL);
 });
 
 // адреса сред
-router.get('/api/urls', async (ctx, next) => {
+router.get('/urls', async (ctx, next) => {
     ctx.body = token.getURLS();
 });
 

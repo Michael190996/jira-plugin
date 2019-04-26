@@ -1,0 +1,8 @@
+node_modules/*
+public/*
+nginx/*
+data/*
+.idea/*
+.git/*
+.gitignore
+ecosystem.config.json

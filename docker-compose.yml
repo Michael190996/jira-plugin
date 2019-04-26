@@ -1,0 +1,25 @@
+version: "3.4"
+
+services:
+  front:
+    build: "public/"
+    env_file:
+      - ./.env
+
+  back:
+    build: .
+    volumes:
+      - "./data:/workspace/data"
+
+  nginx:
+    image: nginx
+    ports:
+     - ${DOCKER_VIEW}:80
+    env_file:
+      - ./.env
+    depends_on:
+      - front
+      - back
+    volumes:
+      - "./nginx:/home_nginx"
+    command: sh /home_nginx/run_nginx.sh
